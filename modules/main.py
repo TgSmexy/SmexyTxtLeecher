@@ -52,7 +52,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-@bot.on_message(filters.command(["Bye"]))
+@bot.on_message(filters.command(["Stop"]))
 async def restart_handler(_, m):
     await m.reply_text("**Stoped Babe💕**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -61,7 +61,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["SmexyOP"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('**𝐇𝐞𝐲 [𝙎𝙢𝙚𝙭𝙮 ᥫ᭡](http://t.me/SmexyOP) 𝙃𝙚𝙧𝙚🍷 \n\n 𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**')
+    editable = await m.reply_text('**𝐇𝐞𝐲 [𝙎𝙢𝙚𝙭𝙮 ᥫ᭡](http://t.me/SmexyOP) 𝙃𝙚𝙧𝙚🍷 \n\n 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍**')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -78,23 +78,23 @@ async def account_login(bot: Client, m: Message):
        os.remove(x)
             # print(len(links)
     except:
-           await m.reply_text("**Invalid file input.**")
+           await m.reply_text("**𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐟𝐢𝐥𝐞 𝐢𝐧𝐩𝐮𝐭.**")
            os.remove(x)
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝐓𝐨𝐭𝐚𝐥 𝐋𝐢𝐧𝐤 𝐅𝐨𝐮𝐧𝐝 𝐀𝐫𝐞 🔗🔗** **{len(links)}**\n\n**𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter Batch Name Babe**")
+    await editable.edit("𝐍𝐨𝐰 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸\n\nℚᴜᴀʟɪᴛʏ तो बताओ 𝕃ɪᴋᴇ 𝟷𝟺𝟺ᴘ, 𝟸𝟺𝟶ᴘ, 𝟹𝟼𝟶ᴘ, 𝟺𝟾𝟶ᴘ, 𝟽𝟸𝟶ᴘ, 𝟷𝟶𝟾𝟶ᴘ**")
+    await editable.edit("**𝐄𝐧𝐭𝐞𝐫 𝐄𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧 📸\n\nℚᴜᴀʟɪᴛʏ तो बताओ 𝕃ɪᴋᴇ 𝟷𝟺𝟺ᴘ, 𝟸𝟺𝟶ᴘ, 𝟹𝟼𝟶ᴘ, 𝟺𝟾𝟶ᴘ, 𝟽𝟸𝟶ᴘ, 𝟷𝟶𝟾𝟶ᴘ\nPlease Choose Quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -118,7 +118,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send**   **`𝙎𝙢𝙚𝙭𝙮 ᥫ᭡`**")
+    await editable.edit("✏️ Now Enter A Caption to add caption on your uploaded file Otherwise send**   **`𝙎𝙢𝙚𝙭𝙮 ᥫ᭡`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -128,7 +128,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("**Now send the** **Thumb url**\nEg » **`https://graph.org/file/c9669066860d912fd5035.jpg`**\n\**nor Send** `no`")
+    await editable.edit("🌄 Now send the Thumb url\nEg » **`https://graph.org/file/c9669066860d912fd5035.jpg`** \n\n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
